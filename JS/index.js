@@ -150,7 +150,7 @@ currencyBtnsOne.forEach((leftBtn) => {
             const oldBtn = document.querySelector(".currencyBtnsOne .activeBtn")
             oldBtn.classList.remove("activeBtn")
             leftBtn.classList.add("activeBtn")
-            if(leftActiveBtn !== document.querySelector(".currencyBtnsOne .activeBtn").textContent) {
+            if (leftActiveBtn !== document.querySelector(".currencyBtnsOne .activeBtn").textContent) {
                 leftActiveBtn = document.querySelector(".currencyBtnsOne .activeBtn").textContent
                 valueCalc(leftInput.value)
             }
@@ -168,7 +168,7 @@ currencyBtnsTwo.forEach((rightBtn) => {
             const oldBtn = document.querySelector(".currencyBtnsTwo .activeBtn")
             oldBtn.classList.remove("activeBtn")
             rightBtn.classList.add("activeBtn")
-            if(rightActiveBtn !== document.querySelector(".currencyBtnsTwo .activeBtn").textContent) {
+            if (rightActiveBtn !== document.querySelector(".currencyBtnsTwo .activeBtn").textContent) {
                 rightActiveBtn = document.querySelector(".currencyBtnsTwo .activeBtn").textContent
                 valueCalc(leftInput.value)
             }
