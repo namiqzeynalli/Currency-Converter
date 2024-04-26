@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency-Converter</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <img src="./Images/logo.png" alt="bankLogo" />
+        </div>
+        <div class="navbar">
+          <a href="#">БАНК</a>
+          <a href="#">БИЗНЕС</a>
+          <a href="#">ИНВЕСТИЦИИ</a>
+          <a href="#">СТРАХОВАНИЕ</a>
+          <a href="#">МОБАЙЛ</a>
+          <a href="#">ПУТЕШЕСТВИЯ</a>
+          <a href="#">РАЗВЛЕЧЕНИЯ</a>
+        </div>
+        <div class="login">
+          <button>ВОЙТИ</button>
+        </div>
+      </header>
+      <main>
+        <div class="mainHeading">
+          <h1>Конвертер валют онлайн</h1>
+        </div>
+        <div class="currencyContainer">
+          <div class="left">
+            <div class="greyP">
+              <p>У меня есть</p>
+            </div>
+            <div class="currencyBtnsOne">
+              <div class="activeBtn">RUB</div>
+              <div>USD</div>
+              <div>EUR</div>
+              <div>GBP</div>
+            </div>
+            <div class="input-live-value">
+              <div class="inputNum">
+                <input type="number" class="currencyValueLeft" value="100"/>
+              </div>
+              <div class="liveValue">
+                <p class="left-p">1 RUB = 0.011 USD</p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="greyP">
+                <p>Хочу приобрести</p>
+              </div>
+              <div class="currencyBtnsTwo">
+                <div>RUB</div>
+                <div class="activeBtn">USD</div>
+                <div>EUR</div>
+                <div>GBP</div>
+              </div>
+              <div class="input-live-value">
+                <div class="inputNum">
+                  <input type="number" class="currencyValueRight" value= "1.084" disabled/>
+                </div>
+                <div class="liveValue">
+                  <p class="right-p">1 USD = 93.537 RUB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./JS/index.js"></script>
+  </body>
 </html>
